@@ -1,0 +1,54 @@
+@keyframes blink-effect {
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+.blink {
+    animation: blink-effect 1s step-end infinite;
+}
+
+body { 
+    font-family: 'Noto Sans KR', sans-serif; 
+    color:#666666;
+} 
+
+.title_brand{
+    font-weight: bold;
+}
+
+.nav_align_right{
+    flex-direction: row-reverse;
+}
+
+#basic-navbar-nav button{
+    margin-left:8px;
+}
+
+.table_title{
+    font-weight: bold;
+    margin-bottom:8px;
+}
+
+.delete_btn{
+    margin-left:5px;
+    cursor: pointer;
+}
+
+.list_li{
+    color:#a0a0a0;
+    font-size: 14px;
+}
+
+.phone_number{
+    color:#000;
+    margin-left: 5px;
+    margin-right:5px;
+    font-size:16px;
+}
+
+.title_number{
+    /* display:none; */
+    color:#eee;
+    cursor: none;
+}
