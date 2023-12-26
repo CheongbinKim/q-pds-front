@@ -44,10 +44,10 @@ const stopServer = async()=>{
     }
 }
 
-const addNumber = async(data)=>{
+const addNumber = async(sid,number)=>{
     // axios Instance.post 로 데이터 전송
     try {
-        const { result } = await defaultInstance.post(`/call/addNumber`, {"phnNum":data})
+        const { result } = await defaultInstance.post(`/call/addNumber`, {"sid":sid,"phnNum":number})
         return result
     } catch (error) {
         console.log(error)
